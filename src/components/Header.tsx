@@ -41,7 +41,7 @@ export default function Example() {
   return (
     <header className="bg-white border-b-2 border-gray-300">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex container items-center justify-between py-6"
         aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">

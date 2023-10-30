@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: "200"
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
