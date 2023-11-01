@@ -33,7 +33,7 @@ const Footer = () => {
           </form>
         </div>
         <nav className="pt-20 grid lg:grid-cols-2 grid-cols-1">
-          <div className="logo mx-auto">
+          <div className="logo lg:mx-0 mx-auto">
             <Image
               src={LogoImg}
               alt="Fiatplug Logo"
@@ -43,7 +43,7 @@ const Footer = () => {
             />
             <h2 className="text-white pl-16 leading-4">TECHNOLOGY L.T.D</h2>
           </div>
-          <div className="nav flex justify-between lg:mt-0 mt-10">
+          <div className="nav flex lg:justify-around justify-between lg:mt-0 mt-10">
             <div className="list">
               <h2 className="text-[#F9A21B] text-xl mb-2">Company</h2>
               <div className="links space-y-2 mt-2 grid grid-cols-1">

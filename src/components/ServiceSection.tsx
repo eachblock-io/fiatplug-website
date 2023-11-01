@@ -40,7 +40,7 @@ const ServiceSection = () => {
     AOS.init({});
   }, []);
   return (
-    <div className="bg-white mt-10 lg:py-20 py-10">
+    <div className="bg-white lg:py-20 py-10">
       <div className="container mx-auto">
         <div className="section-title text-center lg:px-40 py-8 lg:space-y-10 space-y-2">
           <h1
