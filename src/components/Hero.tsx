@@ -17,7 +17,7 @@ const Hero = () => {
               Instant cash for gift cards & crypto exchange
             </h1>
             <p className="text-xl animate__animated animate__fadeInTopLeft">
-              Enjoy fast & secured transactions{" "}
+              Enjoy fast & secure transactions{" "}
               <br className="hidden lg:block" /> with amazing rates
             </p>
             <div className="btns flex items-center lg:justify-start justify-center space-x-4">
