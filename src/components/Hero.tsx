@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import appleStoreImg from "@/public/appstore.png";
 import googleStoreImg from "@/public/googleplay.png";
 import shape from "@/public/shape.png";
@@ -13,14 +13,14 @@ const Hero = () => {
       <div className="w-full lg:h-screen h-auto bg-amber-50 flex items-center relative sm:overflow-hidden">
         <div className="container mx-auto grid lg:grid-cols-2 grid-cols-1 bg-amber-50 py-20">
           <div className="content lg:space-y-10 space-y-8 lg:text-left text-center">
-            <h1 className="font-[700] lg:text-6xl text-4xl">
+            <h1 className="font-[700] lg:text-6xl text-4xl animate__animated animate__rotateInDownLeft">
               Instant cash for gift cards & crypto exchange
             </h1>
-            <p className="text-xl">
+            <p className="text-xl animate__animated animate__fadeInTopLeft">
               Enjoy fast & secured transactions{" "}
               <br className="hidden lg:block" /> with amazing rates
             </p>
-            <div className="btns flex items-center space-x-4">
+            <div className="btns flex items-center lg:justify-start justify-center space-x-4">
               <a href="/">
                 <Image
                   src={appleStoreImg}
@@ -54,14 +54,14 @@ const Hero = () => {
               alt="shape"
               width={300}
               height={400}
-              className="absolute lg:right-[15rem] lg:top-[7rem] top-[36rem] z-20"
+              className="absolute lg:right-[15rem] lg:top-[7rem] top-[36rem] z-20 animate__animated animate__fadeInTopLeft animate__delay-1s"
             />
             <Image
               src={heroPhone2}
               alt="shape"
               width={300}
               height={400}
-              className="absolute lg:right-[5rem] right-[0rem] lg:top-[4rem] top-[28rem] z-10"
+              className="absolute lg:right-[5rem] right-[0rem] lg:top-[4rem] top-[28rem] z-10 animate__animated animate__fadeInRightBig"
             />
             <Image
               src={heroShape}

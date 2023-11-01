@@ -1,17 +1,20 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import CreditCard from "@/public/CreditCard.png";
 import BitcoinImg from "@/public/bitcoinconvert_.png";
 import GiveCoin from "@/public/GivingRupiahcoin.png";
 import ListImg from "@/public/List.png";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const cardList = [
-//   {
-//     id: 1,
-//     img: CreditCard,
-//     title: "Sell Giftcard",
-//     des: "P2p giftcard transactions with High rates",
-//   },
+  {
+    id: 1,
+    img: CreditCard,
+    title: "Sell Giftcard",
+    des: "P2p giftcard transactions with High rates",
+  },
   {
     id: 2,
     img: BitcoinImg,
@@ -33,14 +36,22 @@ const cardList = [
 ];
 
 const ServiceSection = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
-    <div className="bg-white my-10">
+    <div className="bg-white mt-10 lg:py-20 py-10">
       <div className="container mx-auto">
         <div className="section-title text-center lg:px-40 py-8 lg:space-y-10 space-y-2">
-          <h1 className="lg:text-4xl text-3xl font-[600] text-[#092B89]">
+          <h1
+            data-aos="fade-up"
+            className="lg:text-4xl text-3xl mb-6 font-[600] text-[#092B89]">
             Trade made with <span className="text-amber-400">ease</span>
           </h1>
-          <p className="lg:px-40 text-sm">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="lg:px-40 text-sm">
             Our platform ensures a seamless and secure trading experience for
             selling gift cards and cryptocurrencies, Our dedicated customer
             support team is always here to assist you with any questions,
@@ -50,7 +61,11 @@ const ServiceSection = () => {
         </div>
         <section className="grid lg:grid-cols-4 grid-cols-1 gap-6 mt-10">
           {cardList?.map((item) => (
-            <div key={item.id} className="card border p-8 shadow-lg">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              key={item.id}
+              className="card border p-8 shadow-lg">
               <Image
                 src={item.img}
                 alt={item?.title}
