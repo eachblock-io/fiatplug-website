@@ -1,7 +1,13 @@
 import Breadcrum from "@/components/Breadcrum";
+import FaqSection from "@/components/FaqSection";
+import Footer from "@/components/Footer";
+import GetStartedSection from "@/components/GetStartedSection";
 import Hero from "@/components/Hero";
+import OfferSection from "@/components/OfferSection";
 import ServiceSection from "@/components/ServiceSection";
+import StepSection from "@/components/StepSection";
 import Image from "next/image";
+import "aos/dist/aos.css";
 
 export default function Home() {
   return (
@@ -9,6 +15,11 @@ export default function Home() {
       <Hero />
       <Breadcrum />
       <ServiceSection />
+      <StepSection />
+      <OfferSection />
+      <FaqSection />
+      <GetStartedSection />
+      <Footer />
     </main>
   );
 }

@@ -65,6 +65,12 @@
     --ring: 240 4.9% 83.9%;
   }
 }
+
+.startedBg {
+  background-image: url('/startedbg.png'), linear-gradient(180deg, #F90 0.04%, #794B06 170.42%);
+  background-position: center;
+  background-size: cover;
+}
  
 @layer base {
   * {
