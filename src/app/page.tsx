@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import OfferSection from "@/components/OfferSection";
 import ServiceSection from "@/components/ServiceSection";
 import StepSection from "@/components/StepSection";
-import Image from "next/image";
 import "aos/dist/aos.css";
 
 export default function Home() {
