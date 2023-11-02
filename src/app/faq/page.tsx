@@ -72,7 +72,6 @@ const FaqPage = () => {
       <section className="pt-40">
         <h1
           data-aos="fade-left"
-          data-aos-duration="2000"
           className="lg:text-4xl text-2xl mb-20 font-bold text-center">
           Frequently asked questions
         </h1>
@@ -82,7 +81,6 @@ const FaqPage = () => {
               <Accordion
                 key={data?.id}
                 data-aos="fade-left"
-                data-aos-duration="2000"
                 type="single"
                 collapsible
                 className="bg-white">
