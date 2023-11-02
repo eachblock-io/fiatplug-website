@@ -13,25 +13,25 @@ const cardList = [
     id: 1,
     img: CreditCard,
     title: "Sell Giftcard",
-    des: "P2p giftcard transactions with High rates",
+    des: "P2P giftcard transactions with amazing rates",
   },
   {
     id: 2,
     img: BitcoinImg,
     title: "Buy & Sell crypto",
-    des: "P2p giftcard transactions with High rates",
+    des: "P2P crypto transactions with amazing rates",
   },
   {
     id: 3,
     img: GiveCoin,
     title: "Airtime & Data",
-    des: "P2p giftcard transactions with High rates",
+    des: "Buy airtime and data with your earned Fiatplug coins for free, Coins can be earned from trading with the Fiatplug app.",
   },
   {
     id: 4,
     img: ListImg,
     title: "Pay Bills",
-    des: "P2p giftcard transactions with High rates",
+    des: "Pay bills with bank transfers, USSD, or with your FiatPlug coins. Payment with FiatPlug coins are free of charge",
   },
 ];
 

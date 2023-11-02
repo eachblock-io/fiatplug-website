@@ -43,7 +43,6 @@ const StepSection = () => {
       </div>
       <div className="container mx-auto grid lg:grid-cols-2 gap-20 items-center relative">
         <div
-          data-aos-duration="2000"
           data-aos="fade-up-right"
           className="content pt-14 lg:px-20">
           <h1 className="lg:text-4xl text-3xl font-bold leading-9 font-[600] text-[#092B89]">
@@ -67,7 +66,6 @@ const StepSection = () => {
           <Image
             src={imgTwo}
             data-aos="fade-up-left"
-            data-aos-duration="2000"
             alt="phone img"
             width={600}
             height={500}

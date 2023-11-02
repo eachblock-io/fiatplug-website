@@ -70,7 +70,6 @@ const FaqSection = () => {
       <div className="container mx-auto">
         <h1
           data-aos="fade-left"
-          data-aos-duration="2000"
           className="lg:text-4xl text-2xl font-bold text-white text-center">
           Frequently asked questions
         </h1>
@@ -79,7 +78,6 @@ const FaqSection = () => {
             <Accordion
             key={data?.id}
               data-aos="fade-left"
-              data-aos-duration="2000"
               type="single"
               collapsible
               className="bg-white px-4 rounded-lg">

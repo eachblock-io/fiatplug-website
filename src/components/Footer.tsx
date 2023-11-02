@@ -41,7 +41,7 @@ const Footer = () => {
               height={200}
               priority
             />
-            <h2 className="text-white pl-16 leading-4">TECHNOLOGY L.T.D</h2>
+            <h2 className="text-white pl-16 leading-4">TECHNOLOGIES L.T.D</h2>
           </div>
           <div className="nav flex lg:justify-around justify-between lg:mt-0 mt-10">
             <div className="list">

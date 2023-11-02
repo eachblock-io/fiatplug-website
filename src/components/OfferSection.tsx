@@ -19,7 +19,6 @@ const OfferSection = () => {
           <div className="card flex sm:items-center bg-white rounded-xl lg:w-8/12 w-full mx-auto drop-shadow-lg">
             <div className="list p-8 space-y-6 mt-6 lg:w-9/12 w-full">
               <div
-                data-aos-duration="2000"
                 data-aos="fade-up"
                 className="list flex">
                 <div className="lg:mr-8 mr-4">
@@ -39,7 +38,6 @@ const OfferSection = () => {
               </div>
               <div
                 data-aos="fade-up"
-                data-aos-duration="2000"
                 className="list flex">
                 <div className="lg:mr-8 mr-4">
                   <div className="border-2 border-gray-300 lg:h-14 lg:w-14 h-12 w-12 rounded-full flex items-center justify-center ">
@@ -57,7 +55,6 @@ const OfferSection = () => {
                 </div>
               </div>
               <div
-                data-aos-duration="2000"
                 data-aos="fade-up"
                 className="list flex">
                 <div className="lg:mr-8 mr-4">
@@ -77,7 +74,6 @@ const OfferSection = () => {
                 </div>
               </div>
               <div
-                data-aos-duration="2000"
                 data-aos="fade-up"
                 className="list flex">
                 <div className="lg:mr-8 mr-4">
@@ -101,7 +97,6 @@ const OfferSection = () => {
               <Image
                 src={phoneImg}
                 data-aos="fade-left"
-                data-aos-duration="2000"
                 alt="phoneImg"
                 width={220}
                 height={200}

@@ -42,7 +42,6 @@ const GetStartedSection = () => {
           <Image
             src={phoneImg}
             data-aos="zoom-in-up"
-            data-aos-duration="2000"
             alt="phoneImg"
             width={450}
             height={300}
