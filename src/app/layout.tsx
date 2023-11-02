@@ -3,8 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import "animate.css";
-import { DefaultSeo } from "next-seo";
-import Head from "next/head";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,6 +12,35 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Fiatplug",
   description: "Instant cash for gift cards & crypto exchange",
+  openGraph: {
+    type: "website",
+    url: "https://res.cloudinary.com/calebcloud/image/upload/v1698926769/e07a6bq5w0wckneffkxk.png",
+    title: "Fiatplug",
+    description: "Instant cash for gift cards & crypto exchange",
+    images: [
+      {
+        url: "https://res.cloudinary.com/calebcloud/image/upload/v1698926769/e07a6bq5w0wckneffkxk.png",
+        type: "image/jpg",
+        width: 1200,
+        height: 630,
+        alt: "EMM",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fiatplug",
+    description: "Instant cash for gift cards & crypto exchange",
+    images: [
+      {
+        url: "https://res.cloudinary.com/calebcloud/image/upload/v1698926769/e07a6bq5w0wckneffkxk.png",
+        type: "image/jpg",
+        width: 1200,
+        height: 630,
+        alt: "EMM",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -23,29 +50,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <DefaultSeo
-          title="Fiatplug"
-          description="Instant cash for gift cards & crypto exchange"
-          openGraph={{
-            type: "website",
-            url: "https://res.cloudinary.com/calebcloud/image/upload/v1698926769/e07a6bq5w0wckneffkxk.png",
-            title: "Fiatplug",
-            description: "Instant cash for gift cards & crypto exchange",
-            images: [
-              {
-                url: "https://res.cloudinary.com/calebcloud/image/upload/v1698926769/e07a6bq5w0wckneffkxk.png",
-                alt: "Open Graph Image Alt Text",
-              },
-            ],
-          }}
-          twitter={{
-            handle: "@yourtwitterhandle",
-            site: "@yoursite",
-            cardType: "summary_large_image",
-          }}
-        />
-      </Head>
       <body className={poppins.className}>
         <Header />
         <main>{children}</main>
