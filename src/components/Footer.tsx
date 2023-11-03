@@ -130,16 +130,24 @@ const Footer = () => {
           </p>
         </div>
         <div className="icons grid grid-cols-4 gap-6 lg:mt-0 mt-8">
-          <a href="#">
+          <a
+            target="_blank"
+            href="https://twitter.com/fiatplug/status/1655456794305523712?s=46">
             <FaTwitter className="text-white text-xl" />
           </a>
-          <a href="#">
+          <a
+            target="_blank"
+            href="https://instagram.com/fiatplug.ng?igshid=OGQ5ZDc2ODk2ZA==">
             <BiLogoInstagramAlt className="text-white text-xl" />
           </a>
-          <a href="#">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/fiat-plug-006386299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
             <FaLinkedin className="text-white text-xl" />
           </a>
-          <a href="#">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=100091570693160&mibextid=LQQJ4d">
             <FaFacebook className="text-white text-xl" />
           </a>
         </div>
