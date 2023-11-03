@@ -4,6 +4,8 @@ import { FaTwitter, FaLinkedin, FaFacebook } from "react-icons/fa6";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import LogoImg from "@/public/footer-logo.png";
 import Image from "next/image";
+import { MdOutlineMarkEmailUnread, MdOutlineLocationOn } from "react-icons/md";
+import { BsTelephone } from "react-icons/bs";
 
 const Footer = () => {
   const currentDate = new Date().getFullYear();
@@ -41,7 +43,23 @@ const Footer = () => {
               height={200}
               priority
             />
-            <h2 className="text-white pl-16 leading-4">TECHNOLOGIES L.T.D</h2>
+            <h2 className="text-white pl-14 leading-4">TECHNOLOGIES L.T.D</h2>
+            <div className="contact-info mt-8">
+              <div className="flex items-center text-white">
+                <MdOutlineMarkEmailUnread className="mr-2 text-2xl text-[#F9A21B]" />
+                <p>support@fiatplug.com</p>
+              </div>
+              <div className="flex items-center text-white mt-4">
+                <BsTelephone className="mr-2 text-2xl text-[#F9A21B]" />
+                <p>+234 814 570 7211</p>
+              </div>
+              <div className="flex items-center text-white mt-4">
+                <div>
+                  <MdOutlineLocationOn className="mr-2 text-3xl text-[#F9A21B]" />
+                </div>
+                <p>Suite 217A DBM plaza, Nouakchott Street Wuse zone 1 Abuja</p>
+              </div>
+            </div>
           </div>
           <div className="nav flex lg:justify-around justify-between lg:mt-0 mt-10">
             <div className="list">
@@ -50,16 +68,16 @@ const Footer = () => {
                 <Link href="/about" className="text-white">
                   About us
                 </Link>
-                <Link href="/about" className="text-white">
+                <Link href="/contact" className="text-white">
                   Contact
                 </Link>
                 <Link href="/about" className="text-white">
                   About us
                 </Link>
-                <Link href="/about" className="text-white">
+                <Link href="/privacy" className="text-white">
                   Privacy policy
                 </Link>
-                <Link href="/about" className="text-white">
+                <Link href="/terms&condition" className="text-white">
                   Terms & Condition
                 </Link>
               </div>
@@ -67,16 +85,28 @@ const Footer = () => {
             <div className="list">
               <h2 className="text-[#F9A21B] text-xl mb-2">Social</h2>
               <div className="links space-y-2 mt-2 grid grid-cols-1">
-                <Link href="/about" className="text-white">
+                <Link
+                  href="https://instagram.com/fiatplug.ng?igshid=OGQ5ZDc2ODk2ZA=="
+                  className="text-white"
+                  target="_blank">
                   Instagram
                 </Link>
-                <Link href="/about" className="text-white">
+                <Link
+                  href="https://twitter.com/fiatplug/status/1655456794305523712?s=46"
+                  className="text-white"
+                  target="_blank">
                   Twitter
                 </Link>
-                <Link href="/about" className="text-white">
+                <Link
+                  href="https://www.linkedin.com/in/fiat-plug-006386299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  className="text-white"
+                  target="_blank">
                   LinkenIn
                 </Link>
-                <Link href="/about" className="text-white">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=100091570693160&mibextid=LQQJ4d"
+                  className="text-white"
+                  target="_blank">
                   Facebook
                 </Link>
               </div>
@@ -99,7 +129,7 @@ const Footer = () => {
             </a>
           </p>
         </div>
-        <div className="icons grid grid-cols-4 gap-6 mt-8">
+        <div className="icons grid grid-cols-4 gap-6 lg:mt-0 mt-8">
           <a href="#">
             <FaTwitter className="text-white text-xl" />
           </a>
