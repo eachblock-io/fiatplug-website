@@ -30,7 +30,9 @@ const Hero = () => {
                   priority
                 />
               </a>
-              <a href="/">
+              <a
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.eachblock.fiatplug">
                 <Image
                   src={googleStoreImg}
                   alt="Apple Store"
