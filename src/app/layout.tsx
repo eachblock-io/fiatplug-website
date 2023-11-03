@@ -50,6 +50,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <script
+        src="//code.tidio.co/aeygamh3zbkw5hp6ox1uqmnaveo2fu3g.js"
+        async></script>
       <body className={poppins.className}>
         <Header />
         <main>{children}</main>
