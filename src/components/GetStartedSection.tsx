@@ -27,10 +27,10 @@ const GetStartedSection = () => {
                 priority
               />
             </a>
-            <a href="/">
+            <a href="https://play.google.com/store/apps/details?id=com.eachblock.fiatplug">
               <Image
                 src={googleStoreImg}
-                alt="Apple Store"
+                alt="PlayStore"
                 width={150}
                 height={150}
                 priority
