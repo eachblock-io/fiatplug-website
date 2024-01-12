@@ -3,6 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import "animate.css";
+import { Toaster} from "sonner";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -56,6 +58,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Header />
         <main>{children}</main>
+        <Toaster />
       </body>
     </html>
   );

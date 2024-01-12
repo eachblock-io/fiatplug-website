@@ -86,14 +86,14 @@ const Hero = () => {
               alt="shape"
               width={300}
               height={400}
-              className="absolute lg:right-[15rem] lg:top-[7rem] top-[37rem] z-20 animate__animated animate__fadeInTopLeft animate__delay-1s"
+              className="absolute lg:right-[15rem] lg:top-[7rem] top-[30rem] z-20 animate__animated animate__fadeInTopLeft animate__delay-1s"
             />
             <Image
               src={heroPhone2}
               alt="shape"
               width={300}
               height={400}
-              className="absolute lg:right-[5rem] right-[0rem] lg:top-[4rem] top-[30rem] z-10 animate__animated animate__fadeInRightBig"
+              className="absolute lg:right-[5rem] right-[0rem] lg:top-[4rem] top-[25rem] z-10 animate__animated animate__fadeInRightBig"
             />
             <Image
               src={heroShape}

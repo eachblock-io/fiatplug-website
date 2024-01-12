@@ -5,9 +5,53 @@ import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { IoMdClose } from "react-icons/io";
+import { toast } from "sonner";
 
 export default function WaitlistModal({ open, setOpen }: any) {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [loading, setLoading] = useState(false);
   const cancelButtonRef = useRef(null);
+
+  const handleWaitlist = async (e: any) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const response = await fetch(
+        "https://staging-api.fiatplug.co/v2/join-wait-list",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, name }), // Assuming email and name are defined variables
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to submit data");
+      }
+
+      // If the request is successful, you can handle the response here
+      // For example, you might want to log a success message or update your UI
+      console.log("Data submitted successfully");
+      setEmail("");
+      setName("");
+      console.log(response);
+      setOpen(false);
+      toast("You have successfully join the waiting list 🚀👋👍", {
+        description: "",
+      });
+    } catch (error) {
+      // Handle error
+      toast("Email already exist!! ⚠️⚠️", {
+        description: "",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -52,40 +96,29 @@ export default function WaitlistModal({ open, setOpen }: any) {
                     </p>
                   </div>
                   <div className="form lg:p-10 p-8 bg-white">
-                    <form className="space-y-6">
+                    <form className="space-y-6" onSubmit={handleWaitlist}>
                       <Input
                         type="name"
                         placeholder="Name"
+                        id="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         className="w-full py-7 px-6 border border-gray-300 bg-transparent outline-none"
                       />
                       <Input
                         type="email"
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         placeholder="example@email.com"
                         className="w-full py-7 px-6 border border-gray-300 bg-transparent outline-none"
                       />
-                      <Button
-                        onClick={() => setOpen(false)}
-                        className="w-full py-7 px-6 bg-amber-400 transition-all hover:bg-amber-200 text-zinc-800 font-semibold">
-                        Join the waitlist
+                      <Button className="w-full py-7 px-6 bg-amber-400 transition-all hover:bg-amber-200 text-zinc-800 font-semibold">
+                        {loading ? "Joining..." : "Join the waitlist"}
                       </Button>
                     </form>
                   </div>
                 </div>
-                {/* <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                  <button
-                    type="button"
-                    className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
-                    onClick={() => setOpen(false)}>
-                    Deactivate
-                  </button>
-                  <button
-                    type="button"
-                    className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
-                    onClick={() => setOpen(false)}
-                    ref={cancelButtonRef}>
-                    Cancel
-                  </button>
-                </div> */}
               </Dialog.Panel>
             </Transition.Child>
           </div>
