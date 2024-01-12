@@ -37,7 +37,7 @@ const navList = [
   {
     id: 5,
     title: "Log In",
-    path: "/login",
+    path: "/https://app.fiatplug.com/login",
   },
 ];
 

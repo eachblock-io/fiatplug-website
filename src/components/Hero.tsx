@@ -10,9 +10,22 @@ import heroPhone2 from "@/public/heroPhone2.png";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import WaitlistModal from "./WaitlistModal";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Hero = () => {
   const [open, setOpen] = useState(true);
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    window.localStorage.setItem("userEmail", email);
+    // router.push("/https://app.fiatplug.com/login");
+    setLoading(true);
+    console.log(email);
+  };
 
   return (
     <>
@@ -34,22 +47,15 @@ const Hero = () => {
                 Get Started
               </Button>
             </div>
-            <div className="lg:flex hidden w-full max-w-md space-x-2">
-              <div className="w-full">
-                <Input
-                  type="email"
-                  placeholder="example@email.com"
-                  className="w-full py-7 px-6 border border-gray-300 bg-transparent outline-none"
-                />
-                <p className="text-sm font-semibold mt-1">
-                  Register now and start trading!
-                </p>
+            <form>
+              <div className="lg:flex hidden w-full max-w-md space-x-2">
+                <Link href="https://app.fiatplug.com/login">
+                  <Button className=" py-7 px-14 bg-amber-400 transition-all hover:bg-amber-200 text-zinc-800 font-semibold">
+                    Get Started
+                  </Button>
+                </Link>
               </div>
-              <Button
-                className=" py-7 px-6 bg-amber-400 transition-all hover:bg-amber-200 text-zinc-800 font-semibold">
-                Get Started
-              </Button>
-            </div>
+            </form>
 
             <div className="btns flex items-center lg:justify-start justify-center space-x-4">
               <Image
