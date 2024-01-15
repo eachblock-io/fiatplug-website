@@ -53,12 +53,12 @@ const Footer = () => {
                 <BsTelephone className="mr-2 text-2xl text-[#F9A21B]" />
                 <p>+234 814 570 7211</p>
               </div>
-              <div className="flex items-center text-white mt-4">
+              {/* <div className="flex items-center text-white mt-4">
                 <div>
                   <MdOutlineLocationOn className="mr-2 text-3xl text-[#F9A21B]" />
                 </div>
                 <p>Suite 217A DBM plaza, Nouakchott Street Wuse zone 1 Abuja</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="nav flex lg:justify-around justify-between lg:mt-0 mt-10">
