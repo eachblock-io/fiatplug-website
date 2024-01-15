@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Instant cash for gift cards & crypto exchange",
   openGraph: {
     type: "website",
-    url: "https://res.cloudinary.com/calebcloud/image/upload/v1698926769/e07a6bq5w0wckneffkxk.png",
+    url: "https://www.fiatplug.com",
     title: "Fiatplug",
     description: "Instant cash for gift cards & crypto exchange",
     images: [

@@ -1,14 +1,11 @@
 "use client";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { IoMdClose } from "react-icons/io";
-import { toast } from "sonner";
 import successImg from "@/public/success-img.jpg";
 import Image from "next/image";
-import { FaTruckPlane } from "react-icons/fa6";
 
 export default function WaitlistModal({ open, setOpen }: any) {
   const [email, setEmail] = useState("");
