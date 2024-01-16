@@ -34,11 +34,11 @@ const navList = [
     title: "FAQ",
     path: "/faq",
   },
-  {
-    id: 5,
-    title: "Log In",
-    path: "/https://app.fiatplug.com/login",
-  },
+  // {
+  //   id: 5,
+  //   title: "Log In",
+  //   path: "/https://app.fiatplug.com/login",
+  // },
 ];
 
 export default function Example() {
